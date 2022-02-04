@@ -6,12 +6,12 @@ module.exports = {
   entry: './src/index.ts',
   mode: 'development',
   devServer: {
-    static: path.join(__dirname, 'dist'),
+    static: path.join(__dirname, 'docs'),
     compress: true,
     port: 8080,
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     filename: 'bundle.js',
   },
   module: {

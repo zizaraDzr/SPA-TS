@@ -3,4 +3,4 @@ import App from "./core/App";
 
 const hello = new App()
 
-hello.run()
+hello.run();
