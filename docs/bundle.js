@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/Menu/menu.css":
+/*!*****************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/Menu/menu.css ***!
+  \*****************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".menu {\\r\\n    background: #020418;\\r\\n    color: wheat;\\r\\n    width: 150px;\\r\\n    height: 100%;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://spa-ts/./src/Menu/menu.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/main.css":
 /*!*******************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/main.css ***!
   \*******************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css?family=Lato&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \":root {\\r\\n    --border-color: #e3e5e4;\\r\\n    --background-color: #c3c7ca;\\r\\n    --text-color: #34444f;\\r\\n  }\\r\\n\\r\\n  * {\\r\\n    box-sizing: border-box;\\r\\n  }\\r\\n  body {\\r\\n    background-color: var(--background-color);\\r\\n    height: 100vh;\\r\\n    margin: 0;\\r\\n    font-family: 'Lato', sans-serif;\\r\\n    display: flex;\\r\\n    justify-content: center;\\r\\n    align-items: center;\\r\\n    font-size: 1.8em;\\r\\n  }\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://spa-ts/./src/styles/main.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css?family=Lato&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \":root {\\r\\n    --border-color: #e3e5e4;\\r\\n    --background-color: #c3c7ca;\\r\\n    --text-color: #34444f;\\r\\n  }\\r\\n\\r\\n  * {\\r\\n    box-sizing: border-box;\\r\\n  }\\r\\n  body {\\r\\n    background-color: var(--background-color);\\r\\n    height: 100vh;\\r\\n    margin: 0;\\r\\n    font-family: 'Lato', sans-serif;\\r\\n    font-size: 1.8em;\\r\\n  }\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://spa-ts/./src/styles/main.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -37,6 +47,16 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 /***/ ((module) => {
 
 eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack://spa-ts/./node_modules/css-loader/dist/runtime/noSourceMaps.js?");
+
+/***/ }),
+
+/***/ "./src/Menu/menu.css":
+/*!***************************!*\
+  !*** ./src/Menu/menu.css ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_singletonStyleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/singletonStyleDomAPI.js */ \"./node_modules/style-loader/dist/runtime/singletonStyleDomAPI.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_singletonStyleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_singletonStyleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ \"./node_modules/style-loader/dist/runtime/insertBySelector.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ \"./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ \"./node_modules/style-loader/dist/runtime/insertStyleElement.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_menu_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./menu.css */ \"./node_modules/css-loader/dist/cjs.js!./src/Menu/menu.css\");\n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n\nvar options = {};\n\n;\noptions.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());\n\n      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, \"head\");\n    \noptions.domAPI = (_node_modules_style_loader_dist_runtime_singletonStyleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());\noptions.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_menu_css__WEBPACK_IMPORTED_MODULE_5__[\"default\"], options);\n\n\n\n\n       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_menu_css__WEBPACK_IMPORTED_MODULE_5__[\"default\"] && _node_modules_css_loader_dist_cjs_js_menu_css__WEBPACK_IMPORTED_MODULE_5__[\"default\"].locals ? _node_modules_css_loader_dist_cjs_js_menu_css__WEBPACK_IMPORTED_MODULE_5__[\"default\"].locals : undefined);\n\n\n//# sourceURL=webpack://spa-ts/./src/Menu/menu.css?");
 
 /***/ }),
 
@@ -100,13 +120,33 @@ eval("\n\n/* istanbul ignore next  */\nvar replaceText = function replaceText() 
 
 /***/ }),
 
+/***/ "./src/Menu/Menu.ts":
+/*!**************************!*\
+  !*** ./src/Menu/Menu.ts ***!
+  \**************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__webpack_require__(/*! ./menu.css */ \"./src/Menu/menu.css\");\r\nclass Menu {\r\n    constructor() { }\r\n    static render(title) {\r\n        const menu = title.map(item => `\r\n                <div>${item}</div>`).join('');\r\n        // const  = document.createElement('div')\r\n        // div.indivnerText(items)\r\n        // console.log(div)\r\n        // return div\r\n        return `\r\n            <div class=\"menu\">Заголовок\r\n                ${menu}\r\n            </div>\r\n        `;\r\n    }\r\n}\r\nexports[\"default\"] = Menu;\r\n\n\n//# sourceURL=webpack://spa-ts/./src/Menu/Menu.ts?");
+
+/***/ }),
+
 /***/ "./src/core/App.ts":
 /*!*************************!*\
   !*** ./src/core/App.ts ***!
   \*************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nconst Menu_1 = __importDefault(__webpack_require__(/*! ../Menu/Menu */ \"./src/Menu/Menu.ts\"));\r\nconst dashboardPage_1 = __importDefault(__webpack_require__(/*! ../pages/dashboard/dashboardPage */ \"./src/pages/dashboard/dashboardPage.ts\"));\r\nconst mainPage_1 = __importDefault(__webpack_require__(/*! ../pages/main/mainPage */ \"./src/pages/main/mainPage.ts\"));\r\nclass App {\r\n    constructor() {\r\n        // this.container = document.querySelector('#app') as HTMLElement\r\n        this.initialPage = new mainPage_1.default('main-page');\r\n    }\r\n    static renderNewPage(idPage) {\r\n        // document.body.innerHTML = ''\r\n        let page = null;\r\n        if (idPage === 'main-page') {\r\n            page = new mainPage_1.default('main-page');\r\n        }\r\n        if (idPage === 'dashboard-page') {\r\n            page = new dashboardPage_1.default('dashboard-page');\r\n        }\r\n        if (page) {\r\n            const pageHTML = page.render(idPage);\r\n            this.container.append(pageHTML);\r\n        }\r\n    }\r\n    router() {\r\n        window.addEventListener('hashchange', (event) => {\r\n            console.log('hashCgange', event);\r\n        });\r\n    }\r\n    run() {\r\n        // this.container.innerText = 'Hello TypeScript'\r\n        document.body.innerHTML = Menu_1.default.render(['Меню1', 'Меню2', 'Меню3']);\r\n        App.renderNewPage('main-page');\r\n        this.router();\r\n        // const initialPageMain = this.initialPage.render('Hello TypeScript')\r\n        // this.container.append(initialPageMain)\r\n    }\r\n}\r\nApp.container = document.querySelector('#app');\r\nexports[\"default\"] = App;\r\n\n\n//# sourceURL=webpack://spa-ts/./src/core/App.ts?");
+
+/***/ }),
+
+/***/ "./src/core/templates/page.ts":
+/*!************************************!*\
+  !*** ./src/core/templates/page.ts ***!
+  \************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
-eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nclass App {\r\n    constructor() {\r\n        this.container = document.querySelector('#app');\r\n    }\r\n    run() {\r\n        this.container.innerText = 'Hello TypeScript';\r\n    }\r\n}\r\nexports[\"default\"] = App;\r\n\n\n//# sourceURL=webpack://spa-ts/./src/core/App.ts?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nclass Page {\r\n    constructor(id) {\r\n        this.container = document.createElement('div');\r\n        this.container.id = id;\r\n    }\r\n    setTitle(title) {\r\n        document.title = title;\r\n    }\r\n    render(title) {\r\n        return this.container;\r\n    }\r\n}\r\nexports[\"default\"] = Page;\r\n\n\n//# sourceURL=webpack://spa-ts/./src/core/templates/page.ts?");
 
 /***/ }),
 
@@ -116,7 +156,27 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
   \**********************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\r\nconst App_1 = __importDefault(__webpack_require__(/*! ./core/App */ \"./src/core/App.ts\"));\r\nconst hello = new App_1.default();\r\nhello.run();\r\n\n\n//# sourceURL=webpack://spa-ts/./src/index.ts?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\r\nconst App_1 = __importDefault(__webpack_require__(/*! ./core/App */ \"./src/core/App.ts\"));\r\nconst hello = new App_1.default();\r\nconsole.log(hello);\r\nhello.run();\r\n\n\n//# sourceURL=webpack://spa-ts/./src/index.ts?");
+
+/***/ }),
+
+/***/ "./src/pages/dashboard/dashboardPage.ts":
+/*!**********************************************!*\
+  !*** ./src/pages/dashboard/dashboardPage.ts ***!
+  \**********************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nconst page_1 = __importDefault(__webpack_require__(/*! ../../core/templates/page */ \"./src/core/templates/page.ts\"));\r\nclass Dashboard extends page_1.default {\r\n    constructor(id) {\r\n        super(id);\r\n        this.setTitle(\"Dashboard\");\r\n    }\r\n    render(title) {\r\n        const template = document.createElement('h1');\r\n        template.textContent = title;\r\n        this.container.append(template);\r\n        return this.container;\r\n    }\r\n}\r\nexports[\"default\"] = Dashboard;\r\n\n\n//# sourceURL=webpack://spa-ts/./src/pages/dashboard/dashboardPage.ts?");
+
+/***/ }),
+
+/***/ "./src/pages/main/mainPage.ts":
+/*!************************************!*\
+  !*** ./src/pages/main/mainPage.ts ***!
+  \************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nconst page_1 = __importDefault(__webpack_require__(/*! ../../core/templates/page */ \"./src/core/templates/page.ts\"));\r\nclass Main extends page_1.default {\r\n    constructor(id) {\r\n        super(id);\r\n        this.setTitle(\"MainPage\");\r\n    }\r\n    render(title) {\r\n        const template = document.createElement('h1');\r\n        template.textContent = title;\r\n        this.container.append(template);\r\n        return this.container;\r\n    }\r\n}\r\nexports[\"default\"] = Main;\r\n\n\n//# sourceURL=webpack://spa-ts/./src/pages/main/mainPage.ts?");
 
 /***/ })
 
