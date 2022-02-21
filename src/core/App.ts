@@ -2,10 +2,12 @@ import Menu from "../Menu/Menu"
 import Dashboard from "../pages/dashboard/dashboardPage"
 import Main from "../pages/main/mainPage"
 import Page from "./templates/page"
+
+import { StringArray } from '../core/types/type'
 class App {
-    private static container: HTMLElement = document.querySelector('#app') as HTMLElement
+    private container = document.querySelector('#app') as HTMLElement
     // private initialPage: Main
-    static renderNewPage(idPage: string) {
+    private renderNewPage(idPage: string) {
         // document.body.innerHTML = ''
         let page: Page | null = null
 
@@ -29,24 +31,26 @@ class App {
         const sidebar = document.querySelector('.sidebar') as HTMLElement
         sidebar.addEventListener('click', event => {
             let element = event.target as HTMLElement
+            console.log(element)
+            event.preventDefault();
             if (element.classList.contains('toggle') || element.classList.contains('bx-search') ) {
                 sidebar.classList.toggle('close')
             }
+            if (element.matches("[data-link]")) {
+                event.preventDefault();
+                console.log('click menu')
+              }
             
         })
     }
-    constructor () {
-        // this.container = document.querySelector('#app') as HTMLElement
-        // this.initialPage = new Main('main-page')
+    constructor ( menu:StringArray ) {
+        this.init(menu)
     }
 
-    run() {
-        // this.container.innerText = 'Hello TypeScript'
-        document.body.innerHTML = Menu.render(['Меню 1', 'Меню 2', 'Меню 3', 'Меню 4', 'Меню 5', 'Меню 6'])
-        App.renderNewPage('main-page')
+    init(menu:StringArray) {
+        document.body.innerHTML = Menu.render(menu)
+        this.renderNewPage('main-page')
         this.registerEvents()
-        // const initialPageMain = this.initialPage.render('Hello TypeScript')
-        // this.container.append(initialPageMain)
     }
 }
 export default App

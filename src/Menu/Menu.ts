@@ -1,14 +1,18 @@
 import './menu.css'
+import { StringArray } from '../core/types/type'
 class Menu {
 
     constructor() {}
 
-    static render(title: string[]): string {
-         const menu = title.map(item => `
+    static render(itemMenu: StringArray): string {
+        itemMenu.map(({id, name}: any) => {
+            console.log(name)
+        })
+         const menu = itemMenu.map(({id, name}: any) => `
                 <li class="nav-link">
-                    <a href="#" >
+                    <a href="${id}" data-link>
                         <i class='bx bx-home-alt icon'></i>
-                        <span class='text nav-text'>${item}</span>
+                        <span class='text nav-text'>${name}</span>
                     </a>
                 </li>`
         ).join('')
