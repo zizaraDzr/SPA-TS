@@ -1,21 +1,20 @@
 import './menu.css'
-import { StringArray } from '../core/types/type'
+import { IStringArray } from '../core/types/type'
 class Menu {
 
     constructor() {}
 
-    static render(itemMenu: StringArray): string {
-        itemMenu.map(({id, name}: any) => {
-            console.log(name)
-        })
-         const menu = itemMenu.map(({id, name}: any) => `
-                <li class="nav-link">
+    static render(itemMenu: IStringArray): string {
+        if (itemMenu instanceof Array) {
+         let menu = itemMenu.map(({ id, name }) => {
+         console.log({id, name})
+         return (`<li class="nav-link">
                     <a href="${id}" data-link>
                         <i class='bx bx-home-alt icon'></i>
                         <span class='text nav-text'>${name}</span>
                     </a>
                 </li>`
-        ).join('')
+         )}).join('')
 
         return `
             <nav class='sidebar'>
@@ -43,6 +42,9 @@ class Menu {
                     </div>
                 </div>
             </nav>`
+    }
+    return ''
+
     }
 }
 

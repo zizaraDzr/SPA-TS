@@ -1,56 +1,91 @@
-import Menu from "../Menu/Menu"
-import Dashboard from "../pages/dashboard/dashboardPage"
-import Main from "../pages/main/mainPage"
-import Page from "./templates/page"
+import Menu from '../Menu/Menu'
+import Dashboard from '../pages/dashboard/dashboardPage'
+import Main from '../pages/main/mainPage'
+import Page from './templates/page'
 
-import { StringArray } from '../core/types/type'
+import { IStringArray } from '../core/types/type'
 class App {
-    private container = document.querySelector('#app') as HTMLElement
-    // private initialPage: Main
-    private renderNewPage(idPage: string) {
-        // document.body.innerHTML = ''
-        let page: Page | null = null
+  private container = document.querySelector('#app') as HTMLElement
+  private navigateTo(href: string) {
+    // не перезагружает страницу pushState
+    window.history.pushState(null, 'null', href)
+    console.log('navigateTo')
+    this.route()
+  }
+  private async route() {
+    const routes = [
+      {
+        path: '/dashboard',
+        view: Dashboard,
+      },
+        // {
+        //   path: "/editor",
+        //   view: Editor
+        // },
+        // {
+        //   path: "/settings",
+        //   view: Settings
+        // },
+    ]
 
-        if (idPage === 'main-page') {
-            page = new Main('main-page')
-        }
-        if (idPage === 'dashboard-page') {
-            page = new Dashboard('dashboard-page')
-        }
+    const potentialMathces = routes.map((item) => {
+      return {
+        route: item,
+        isMatch: window.location.pathname === item.path,
+      }
+    })
 
-        if (page) {
-            const pageHTML = page.render(idPage)
-            this.container.append(pageHTML)
-        }
-        
-    }
-    private registerEvents() {
-        window.addEventListener('hashchange', (event)=>{
-            console.log('hashCgange', event)
-        })
-        const sidebar = document.querySelector('.sidebar') as HTMLElement
-        sidebar.addEventListener('click', event => {
-            let element = event.target as HTMLElement
-            console.log(element)
-            event.preventDefault();
-            if (element.classList.contains('toggle') || element.classList.contains('bx-search') ) {
-                sidebar.classList.toggle('close')
-            }
-            if (element.matches("[data-link]")) {
-                event.preventDefault();
-                console.log('click menu')
-              }
-            
-        })
-    }
-    constructor ( menu:StringArray ) {
-        this.init(menu)
-    }
+    let match = potentialMathces.find((item) => item.isMatch)
 
-    init(menu:StringArray) {
-        document.body.innerHTML = Menu.render(menu)
-        this.renderNewPage('main-page')
-        this.registerEvents()
+    if (!match) {
+      match = { route: routes[0], isMatch: true }
     }
+    console.log(match)
+    const view = await new match.route.view('dashboard').getHtml()
+    console.log(this.container)
+    // this.container.insertAdjacentHTML('afterbegin', view)
+    this.container.append(view)
+
+    // document.querySelector('#app').innerHTML = await view.render()
+  }
+  private registerEvents() {
+    const sidebar = document.querySelector('.sidebar')
+    if (sidebar) {
+      sidebar.addEventListener(
+        'click',
+        (event) => {
+          let element = event.target as HTMLElement
+          event.preventDefault()
+          if (
+            element.classList.contains('toggle') ||
+            element.classList.contains('bx-search')
+          ) {
+            sidebar.classList.toggle('close')
+          }
+          if (element.closest('[data-link]')) {
+            let href = element.closest('[data-link]')?.getAttribute('href')
+            if (href) this.navigateTo(href)
+          }
+        },
+        true
+      )
+    }
+  }
+  constructor(menu: IStringArray) {
+    // событие нажатие на стрелки назад вперед
+    // Событие popstate вызывается, когда изменяется активная
+    // запись истории. Если
+    // изменение записи истории было вызвано методом history.pushState()
+    this.init(menu)
+  }
+
+  init(menu: IStringArray) {
+    let container = document.querySelector('#app') as HTMLElement
+    container.insertAdjacentHTML('afterbegin', Menu.render(menu))
+    window.addEventListener('popstate', this.route)
+    // document.body.innerHTML = Menu.render(menu)
+    // this.renderNewPage('main-page')
+    this.registerEvents()
+  }
 }
 export default App

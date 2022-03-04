@@ -6,11 +6,11 @@ class Dashboard extends Page {
         this.setTitle("Dashboard")
     }
 
-    render(title: string) {
-        const template = document.createElement('h1')
-        template.textContent = title
-        this.container.append(template)
-        return this.container
-    }
+    async getHtml() {
+        return `
+            <h1>Dasboard asdasd asd as da sd a da d s d</h1>
+            <a href="/editor" data-link>Editor</a>
+            `;
+      }
 }
 export default Dashboard
