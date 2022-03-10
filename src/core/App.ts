@@ -1,5 +1,6 @@
 import Menu from '../Menu/Menu'
 import Dashboard from '../pages/dashboard/dashboardPage'
+import MainPage from '../pages/mainPage/mainPage'
 import Main from '../pages/main/mainPage'
 import Page from './templates/page'
 
@@ -15,13 +16,13 @@ class App {
   private async route() {
     const routes = [
       {
-        path: '/dashboard',
-        view: Dashboard,
+        path: '/',
+        view: MainPage,
       },
-        // {
-        //   path: "/editor",
-        //   view: Editor
-        // },
+        {
+          path: "/dashboard",
+          view: Dashboard
+        },
         // {
         //   path: "/settings",
         //   view: Settings
@@ -41,19 +42,16 @@ class App {
       match = { route: routes[0], isMatch: true }
     }
     console.log(match)
+    // this.navigateTo(href)
     const view = await new match.route.view('dashboard').getHtml()
-    console.log(this.container)
-    // this.container.insertAdjacentHTML('afterbegin', view)
-    this.container.append(view)
-
-    // document.querySelector('#app').innerHTML = await view.render()
+    let mainBlock = document.querySelector('.main') as HTMLElement
+    mainBlock.innerHTML = ''
+    mainBlock.insertAdjacentHTML('afterbegin', view)
   }
   private registerEvents() {
     const sidebar = document.querySelector('.sidebar')
     if (sidebar) {
-      sidebar.addEventListener(
-        'click',
-        (event) => {
+      sidebar.addEventListener('click', event => {
           let element = event.target as HTMLElement
           event.preventDefault()
           if (
@@ -82,9 +80,13 @@ class App {
   init(menu: IStringArray) {
     let container = document.querySelector('#app') as HTMLElement
     container.insertAdjacentHTML('afterbegin', Menu.render(menu))
+
+    const createDiv = document.createElement('div')
+    createDiv.classList.add('main')
+    this.container.append(createDiv)
+
     window.addEventListener('popstate', this.route)
-    // document.body.innerHTML = Menu.render(menu)
-    // this.renderNewPage('main-page')
+    this.route()
     this.registerEvents()
   }
 }

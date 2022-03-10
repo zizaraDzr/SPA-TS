@@ -1,6 +1,6 @@
 import Page from "../../core/templates/page"
 
-class Dashboard extends Page {
+class MainPage extends Page {
     constructor(id: string) {
         super(id)
         this.setTitle("Dashboard")
@@ -8,8 +8,8 @@ class Dashboard extends Page {
 
     async getHtml() {
         return `
-            <iframe src="https://www.bingosoft.ru" style="width: 100%; height: 100%" align="left"></iframe>
+            <div>hello world</div>
             `;
       }
 }
-export default Dashboard
+export default MainPage

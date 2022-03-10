@@ -8,6 +8,8 @@ module.exports = {
   devServer: {
     static: path.join(__dirname, 'docs'),
     compress: true,
+    // чтобы не слал запрос при оставшемся хеше ./editor. Обновляешь страницу и шлется запрос editor и получаем ошибку
+    historyApiFallback: true,
     port: 8080,
   },
   output: {
