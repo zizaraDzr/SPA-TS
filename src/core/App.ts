@@ -35,15 +35,35 @@ class App {
   }
   private async route() {
     let locationPathname = window.location.pathname
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     console.log({locationPathname})
+=======
+    console.log({locationPathname});
+>>>>>>> 74bd66a... test
+=======
+    console.log({locationPathname})
+>>>>>>> bafa1f2... test3
+=======
+    console.log({locationPathname});
+>>>>>>> 100471d... test33
+=======
+    console.log({locationPathname})
+>>>>>>> 2728062... 50
+=======
+    console.log({locationPathname});
+>>>>>>> c949f96... 51
     let idUrl = locationPathname.replace(/[/SPATS/-]+/g, '')
     const routes = [
       {
-        path: `${idUrl}`,
+        path: `/main`,
         view: MainPage,
       },
         {
-          path: `${idUrl}dashboard`,
+          path: `/dashboard`,
           view: Dashboard
         },
         // {
@@ -64,7 +84,7 @@ class App {
     if (!match) {
       match = { route: routes[0], isMatch: true }
     }
-    console.log(match)
+    console.log({match})
     // this.navigateTo(href)
     const view = await new match.route.view('dashboard').getHtml()
     let mainBlock = document.querySelector('.main') as HTMLElement
