@@ -35,7 +35,7 @@ class App {
   }
   private async route() {
     let locationPathname = window.location.pathname
-    console.log(locationPathname);
+    console.log({locationPathname});
     let idUrl = locationPathname.replace(/[/SPATS/-]+/g, '')
     const routes = [
       {
