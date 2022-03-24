@@ -6,6 +6,26 @@ import Page from './templates/page'
 
 import { IStringArray } from '../core/types/type'
 class App {
+  constructor(menu: IStringArray) {
+    // событие нажатие на стрелки назад вперед
+    // Событие popstate вызывается, когда изменяется активная
+    // запись истории. Если
+    // изменение записи истории было вызвано методом history.pushState()
+    this.init(menu)
+  }
+
+  init(menu: IStringArray) {
+    let container = document.querySelector('#app') as HTMLElement
+    container.insertAdjacentHTML('afterbegin', Menu.render(menu))
+
+    const createDiv = document.createElement('div')
+    createDiv.classList.add('main')
+    this.container.append(createDiv)
+
+    window.addEventListener('popstate', this.route)
+    this.route()
+    this.registerEvents()
+  }
   private container = document.querySelector('#app') as HTMLElement
   private navigateTo(href: string) {
     // не перезагружает страницу pushState
@@ -14,13 +34,16 @@ class App {
     this.route()
   }
   private async route() {
+    let locationPathname = window.location.pathname
+    console.log(locationPathname);
+    let idUrl = locationPathname === '/SPA-TS/' ? '/SPA-TS/' : '/'
     const routes = [
       {
-        path: '/',
+        path: `${idUrl}`,
         view: MainPage,
       },
         {
-          path: "/dashboard",
+          path: `${idUrl}dashboard`,
           view: Dashboard
         },
         // {
@@ -28,11 +51,11 @@ class App {
         //   view: Settings
         // },
     ]
-
+    
     const potentialMathces = routes.map((item) => {
       return {
         route: item,
-        isMatch: window.location.pathname === item.path,
+        isMatch: locationPathname === item.path,
       }
     })
 
@@ -48,6 +71,7 @@ class App {
     mainBlock.innerHTML = ''
     mainBlock.insertAdjacentHTML('afterbegin', view)
   }
+
   private registerEvents() {
     const sidebar = document.querySelector('.sidebar')
     if (sidebar) {
@@ -68,26 +92,6 @@ class App {
         true
       )
     }
-  }
-  constructor(menu: IStringArray) {
-    // событие нажатие на стрелки назад вперед
-    // Событие popstate вызывается, когда изменяется активная
-    // запись истории. Если
-    // изменение записи истории было вызвано методом history.pushState()
-    this.init(menu)
-  }
-
-  init(menu: IStringArray) {
-    let container = document.querySelector('#app') as HTMLElement
-    container.insertAdjacentHTML('afterbegin', Menu.render(menu))
-
-    const createDiv = document.createElement('div')
-    createDiv.classList.add('main')
-    this.container.append(createDiv)
-
-    window.addEventListener('popstate', this.route)
-    this.route()
-    this.registerEvents()
   }
 }
 export default App
