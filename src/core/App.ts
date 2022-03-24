@@ -64,7 +64,7 @@ class App {
     if (!match) {
       match = { route: routes[0], isMatch: true }
     }
-    console.log(match)
+    console.log({match})
     // this.navigateTo(href)
     const view = await new match.route.view('dashboard').getHtml()
     let mainBlock = document.querySelector('.main') as HTMLElement
