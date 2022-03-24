@@ -35,15 +35,15 @@ class App {
   }
   private async route() {
     let locationPathname = window.location.pathname
-    console.log({locationPathname})
+    console.log({locationPathname});
     let idUrl = locationPathname.replace(/[/SPATS/-]+/g, '')
     const routes = [
       {
-        path: `${idUrl}`,
+        path: `/main`,
         view: MainPage,
       },
         {
-          path: `${idUrl}dashboard`,
+          path: `/dashboard`,
           view: Dashboard
         },
         // {
@@ -64,7 +64,7 @@ class App {
     if (!match) {
       match = { route: routes[0], isMatch: true }
     }
-    console.log(match)
+    console.log({match})
     // this.navigateTo(href)
     const view = await new match.route.view('dashboard').getHtml()
     let mainBlock = document.querySelector('.main') as HTMLElement
