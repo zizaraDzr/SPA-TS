@@ -39,11 +39,11 @@ class App {
     let idUrl = locationPathname.replace(/[/SPATS/-]+/g, '')
     const routes = [
       {
-        path: `${idUrl}`,
+        path: `/main`,
         view: MainPage,
       },
         {
-          path: `${idUrl}dashboard`,
+          path: `/dashboard`,
           view: Dashboard
         },
         // {
