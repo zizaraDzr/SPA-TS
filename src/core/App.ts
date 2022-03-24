@@ -36,14 +36,14 @@ class App {
   private async route() {
     let locationPathname = window.location.pathname
     console.log(locationPathname);
-    let idUrl = locationPathname === '/SPA-TS/' ? '/SPA-TS/' : '/'
+    let idUrl = locationPathname.replace(/[/SPATS/-]+/g, '')
     const routes = [
       {
-        path: `${idUrl}`,
+        path: `/main`,
         view: MainPage,
       },
         {
-          path: `${idUrl}dashboard`,
+          path: `/dashboard`,
           view: Dashboard
         },
         // {
