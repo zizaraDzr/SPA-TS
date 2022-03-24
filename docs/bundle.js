@@ -156,7 +156,19 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
   \**********************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\r\nconst App_1 = __importDefault(__webpack_require__(/*! ./core/App */ \"./src/core/App.ts\"));\r\nlet locationPathname = window.location.pathname;\r\nconsole.log(locationPathname);\r\nlet idUrl = locationPathname.replace(/[/SPATS/-]+/g, '');\r\nconst menuItems = [\r\n    { id: `${idUrl}main`, name: 'Главная' },\r\n    { id: `${idUrl}dashboard`, name: 'dashboard' },\r\n    { id: `${idUrl}editor`, name: 'editor' }\r\n];\r\nnew App_1.default(menuItems);\r\n// console.log(hello)\r\n\n\n//# sourceURL=webpack://spa-ts/./src/index.ts?");
+=======
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\r\nconst App_1 = __importDefault(__webpack_require__(/*! ./core/App */ \"./src/core/App.ts\"));\r\nlet locationPathname = window.location.pathname;\r\nconsole.log(locationPathname);\r\nlet idUrl = locationPathname === '/SPA-TS/' ? '/SPA-TS/' : '/';\r\nconst menuItems = [\r\n    { id: `${idUrl}`, name: 'Главная' },\r\n    { id: `${idUrl}dashboard`, name: 'dashboard' },\r\n    { id: `${idUrl}editor`, name: 'editor' }\r\n];\r\nnew App_1.default(menuItems);\r\n// console.log(hello)\r\n\n\n//# sourceURL=webpack://spa-ts/./src/index.ts?");
+>>>>>>> ad17227 (dynamical url)
+=======
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\r\nconst App_1 = __importDefault(__webpack_require__(/*! ./core/App */ \"./src/core/App.ts\"));\r\nlet locationPathname = window.location.pathname;\r\nconsole.log(locationPathname);\r\nlet idUrl = locationPathname.replace(/[/SPATS/-]+/g, '');\r\nconst menuItems = [\r\n    { id: `${idUrl}main`, name: 'Главная' },\r\n    { id: `${idUrl}dashboard`, name: 'dashboard' },\r\n    { id: `${idUrl}editor`, name: 'editor' }\r\n];\r\nnew App_1.default(menuItems);\r\n// console.log(hello)\r\n\n\n//# sourceURL=webpack://spa-ts/./src/index.ts?");
+>>>>>>> 042ef7a (test2)
+=======
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\r\nconst App_1 = __importDefault(__webpack_require__(/*! ./core/App */ \"./src/core/App.ts\"));\r\nlet locationPathname = window.location.pathname;\r\nconsole.log(locationPathname);\r\nlet idUrl = locationPathname.replace(/[/SPATS/-]+/g, '');\r\nconst menuItems = [\r\n    { id: `${idUrl}main`, name: 'Главная' },\r\n    { id: `${idUrl}dashboard`, name: 'dashboard' },\r\n    { id: `${idUrl}editor`, name: 'editor' }\r\n];\r\nnew App_1.default(menuItems);\r\n// console.log(hello)\r\n\n\n//# sourceURL=webpack://spa-ts/./src/index.ts?");
+>>>>>>> cf7ed51 (test2)
 
 /***/ }),
 
