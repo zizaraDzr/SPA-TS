@@ -3,7 +3,7 @@ import App from "./core/App";
 
 import { IStringArray } from './core/types/type'
 let locationPathname = window.location.pathname;
-console.log(locationPathname);
+console.log(locationPathname)
 let idUrl = locationPathname.replace(/[/SPATS/-]+/g, '')
 const menuItems:IStringArray = [
     {id: `${idUrl}main`, name: 'Главная'},
@@ -13,3 +13,5 @@ const menuItems:IStringArray = [
 
 new App(menuItems)
 // console.log(hello)
+// asd
+// !!!
