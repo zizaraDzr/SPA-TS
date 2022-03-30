@@ -5,7 +5,7 @@ abstract class Page {
         this.container.id = id;
     }
     setTitle(title: string) {
-        document.title = title;
+        document.title = title
       }
 
     render(title?: string) {
