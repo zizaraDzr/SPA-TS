@@ -8,7 +8,7 @@ abstract class Page {
         document.title = title
       }
 
-    render(title?: string) {
+    render() {
         return this.container
     }
 }
