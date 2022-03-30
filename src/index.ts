@@ -2,7 +2,7 @@ import './styles/main.css'
 import App from "./core/App";
 
 import { IStringArray } from './core/types/type'
-let locationPathname = window.location.pathname
+let locationPathname = window.location.pathname;
 console.log(locationPathname);
 let idUrl = locationPathname.replace(/[/SPATS/-]+/g, '')
 const menuItems:IStringArray = [
