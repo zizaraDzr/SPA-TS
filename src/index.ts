@@ -13,3 +13,4 @@ const menuItems:IStringArray = [
 
 new App(menuItems)
 // console.log(hello)
+// asd
