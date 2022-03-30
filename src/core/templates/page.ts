@@ -1,5 +1,5 @@
 abstract class Page {
-    protected container: HTMLElement
+    protected container: HTMLElement;
     constructor(id: string) {
         this.container = document.createElement('div')
         this.container.id = id
