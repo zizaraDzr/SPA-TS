@@ -1,4 +1,4 @@
-import Page from "../../core/templates/page"
+import Page from "../../core/templates/page";
 
 class Dashboard extends Page {
     constructor(id: string) {
