@@ -29,7 +29,7 @@ class App {
   private container = document.querySelector('#app') as HTMLElement
   private navigateTo(href: string) {
     // не перезагружает страницу pushState
-    window.history.pushState(null, 'null', href)
+    window.history.pushState(null, 'null', href);
     console.log('navigateTo')
     this.route()
   }
