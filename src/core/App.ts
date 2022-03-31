@@ -41,6 +41,7 @@ class App {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     console.log({locationPathname})
 =======
     console.log({locationPathname});
@@ -60,14 +61,17 @@ class App {
 =======
     console.log({locationPathname});
 >>>>>>> b42c7aac7206fcbbf1aea4fa32edcebf1542860c
+=======
+    console.log({locationPathname})
+>>>>>>> parent of 3851ede... dynamical ur++l
     let idUrl = locationPathname.replace(/[/SPATS/-]+/g, '')
     const routes = [
       {
-        path: `/main`,
+        path: `${idUrl}`,
         view: MainPage,
       },
         {
-          path: `/dashboard`,
+          path: `${idUrl}dashboard`,
           view: Dashboard
         },
         // {
@@ -88,7 +92,7 @@ class App {
     if (!match) {
       match = { route: routes[0], isMatch: true }
     }
-    console.log({match})
+    console.log(match)
     // this.navigateTo(href)
     const view = await new match.route.view('dashboard').getHtml()
     let mainBlock = document.querySelector('.main') as HTMLElement
