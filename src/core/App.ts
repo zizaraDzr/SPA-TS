@@ -40,6 +40,7 @@ class App {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     console.log({locationPathname})
 =======
     console.log({locationPathname});
@@ -56,6 +57,9 @@ class App {
 =======
     console.log({locationPathname});
 >>>>>>> c949f96... 51
+=======
+    console.log({locationPathname});
+>>>>>>> b42c7aac7206fcbbf1aea4fa32edcebf1542860c
     let idUrl = locationPathname.replace(/[/SPATS/-]+/g, '')
     const routes = [
       {
