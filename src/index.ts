@@ -9,7 +9,7 @@ let idUrl = locationPathname.replace(/[/SPATS/-]+/g, '')
 console.log({idUrl})
 const menuItems:IStringArray = [
     {id: `${idUrl || '/'}`, name: 'Главная'},
-    {id: `${idUrl}DragAndDrop`, name: 'Drag’n’Drop'},
+    {id: `${idUrl}/DragAndDrop`, name: 'Drag’n’Drop'},
     // {id: `${idUrl}editor`, name: 'editor'}
 ]
 
