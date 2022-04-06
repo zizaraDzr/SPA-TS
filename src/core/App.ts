@@ -51,7 +51,7 @@ class App {
     const potentialMathces = routes.map((item) => {
       return {
         route: item,
-        isMatch: locationPathname === item.path,
+        isMatch: idUrl === item.path,
       }
     })
     console.log({potentialMathces})
