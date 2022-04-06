@@ -45,7 +45,7 @@ class App {
         view: MainPage,
       },
       {
-        path: `DragAndDrop`,
+        path: `/DragAndDrop`,
         view: DragAndDrop
       }
     ]
