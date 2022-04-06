@@ -8,7 +8,7 @@ class Dashboard extends Page {
 
     async getHtml() {
         return `
-        <div>DragAndDrop</div>
+        <iframe src="https://zizaradzr.github.io/drag-and-drop/" style="width: 100%; height: 100%" align="left"></iframe>
             `;
       }
 }
