@@ -10,7 +10,7 @@ console.log({idUrl})
 const menuItems:IStringArray = [
     {id: `${idUrl || '/'}`, name: 'Главная'},
     {id: `${idUrl}/DragAndDrop`, name: 'Drag’n’Drop'},
-    // {id: `${idUrl}editor`, name: 'editor'}
+    {id: `${idUrl}/WebComponents`, name: 'WebComponents'}
 ]
 
 new App(menuItems)

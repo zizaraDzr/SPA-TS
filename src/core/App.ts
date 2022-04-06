@@ -1,6 +1,8 @@
 import Menu from '../Menu/Menu'
-import DragAndDrop from '../pages/DragAndDrop/DragAndDrop'
 import MainPage from '../pages/mainPage/mainPage'
+
+import DragAndDrop from '../pages/DragAndDrop/DragAndDrop'
+import WebComponents from '../pages/WebComponents/WebComponents'
 
 import { IStringArray } from '../core/types/type'
 class App {
@@ -47,6 +49,10 @@ class App {
       {
         path: `/DragAndDrop`,
         view: DragAndDrop
+      },
+      {
+        path: `/WebComponents`,
+        view: WebComponents
       }
     ]
     
