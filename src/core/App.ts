@@ -1,8 +1,6 @@
 import Menu from '../Menu/Menu'
-import Dashboard from '../pages/dashboard/dashboardPage'
+import DragAndDrop from '../pages/DragAndDrop/DragAndDrop'
 import MainPage from '../pages/mainPage/mainPage'
-import Main from '../pages/main/mainPage'
-import Page from './templates/page'
 
 import { IStringArray } from '../core/types/type'
 class App {
@@ -35,21 +33,19 @@ class App {
   }
   private async route() {
     let locationPathname = window.location.pathname
-    console.log({locationPathname});
+    // console.log({locationPathname});
     let idUrl = locationPathname.replace(/[/SPATS/-]+/g, '')
+    console.log({idUrl});
+    console.log({locationPathname})
     const routes = [
       {
-        path: `/main`,
+        path: `/`,
         view: MainPage,
       },
-        {
-          path: `/dashboard`,
-          view: Dashboard
-        },
-        // {
-        //   path: "/settings",
-        //   view: Settings
-        // },
+      {
+        path: `/DragAndDrop`,
+        view: DragAndDrop
+      }
     ]
     
     const potentialMathces = routes.map((item) => {
@@ -58,15 +54,13 @@ class App {
         isMatch: locationPathname === item.path,
       }
     })
-
+    console.log({potentialMathces})
     let match = potentialMathces.find((item) => item.isMatch)
 
     if (!match) {
       match = { route: routes[0], isMatch: true }
     }
-    console.log({match})
-    // this.navigateTo(href)
-    const view = await new match.route.view('dashboard').getHtml()
+    const view = await new match.route.view(match.route.path).getHtml()
     let mainBlock = document.querySelector('.main') as HTMLElement
     mainBlock.innerHTML = ''
     mainBlock.insertAdjacentHTML('afterbegin', view)

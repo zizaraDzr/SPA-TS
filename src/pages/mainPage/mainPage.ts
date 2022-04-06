@@ -3,12 +3,12 @@ import Page from "../../core/templates/page"
 class MainPage extends Page {
     constructor(id: string) {
         super(id)
-        this.setTitle("Dashboard")
+        this.setTitle("Главная")
     }
 
     async getHtml() {
         return `
-            <div>hello world</div>
+            <div>Hello world</div>
             `;
       }
 }

@@ -7,10 +7,6 @@ abstract class Page {
     setTitle(title: string) {
         document.title = title;
       }
-
-    render(title?: string) {
-        return this.container
-    }
 }
 
 export default Page
