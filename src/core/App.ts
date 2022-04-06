@@ -28,14 +28,15 @@ class App {
   private navigateTo(href: string) {
     let locationPathname = window.location.pathname.includes('/SPA-TS/')
     // не перезагружает страницу pushState
-    window.history.pushState(null, 'null', `/SPA-TS/${href}`)
+    window.history.pushState(null, 'null', `/SPA-TS${href}`)
     console.log('navigateTo')
     this.route()
   }
   private async route() {
     let locationPathname = window.location.pathname
     // console.log({locationPathname});
-    let idUrl = locationPathname.replace(/[/SPATS/-]+/g, '')
+    // let idUrl = locationPathname.replace(/[/SPATS/-]+/g, '')
+    let idUrl = locationPathname.slice(8)
     console.log({idUrl});
     console.log({locationPathname})
     const routes = [
