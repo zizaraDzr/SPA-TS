@@ -28,7 +28,7 @@ class App {
   private navigateTo(href: string) {
     let locationPathname = window.location.pathname.includes('/SPA-TS/')
     // не перезагружает страницу pushState
-    window.history.pushState(null, 'null', `/SPA-TS${href}`)
+    window.history.pushState(null, 'null', `/SPA-TS/${href}`)
     console.log('navigateTo')
     this.route()
   }
@@ -45,7 +45,7 @@ class App {
         view: MainPage,
       },
       {
-        path: `/DragAndDrop`,
+        path: `DragAndDrop`,
         view: DragAndDrop
       }
     ]
