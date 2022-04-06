@@ -26,8 +26,9 @@ class App {
   }
   private container = document.querySelector('#app') as HTMLElement
   private navigateTo(href: string) {
+    let locationPathname = window.location.pathname.includes('/SPA-TS/')
     // не перезагружает страницу pushState
-    window.history.pushState(null, 'null', href)
+    window.history.pushState(null, 'null', `/SPA-TS/${href}`)
     console.log('navigateTo')
     this.route()
   }
